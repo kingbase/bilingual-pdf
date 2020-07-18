@@ -1,0 +1,6 @@
+requests>=2.19.1
+PyPDF2==1.26.0
+python-docx==0.8.10
+diskcache==4.1.0
+pywin32
+tqdm
