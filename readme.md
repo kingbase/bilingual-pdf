@@ -10,7 +10,7 @@
 
 效果如图：
 
-![Think Complexity 2 Bilingual Demo](https://github.com/kingbase/bilingual-pdf/raw/master/images/thinkcomplexity2_demo.png)
+![Think Complexity 2 Bilingual Demo](https://bilingual-pdf.oss-cn-huhehaote.aliyuncs.com/thinkcomplexity2_demo.png)
 
 ## 安装说明
 
