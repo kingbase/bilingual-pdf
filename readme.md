@@ -66,7 +66,7 @@ Word --> PDF，依赖于 Office Word 的 COM 接口。
 - `Single1ToN`，适用于页面排版比较复杂的PDF，如常见的学术论文中的双栏排版。
 - `KnownDoc`，你希望自己完成 PDF --> Word 的步骤，仅保留 Word --> PDF --> Merge PDF 。
 
-推荐使用 PDF 阅读器的 **双页模式** 效果更佳！
+推荐使用 PDF 阅读器的 **双页模式** 并列显示，左英文右中文，效果更佳！
 
 ## 用法示例
 
@@ -81,3 +81,9 @@ Word --> PDF，依赖于 Office Word 的 COM 接口。
 - 更好的命令行参数解析
 - 转换后书签丢失
 - 使用百度翻译
+
+## 其他
+
+任何建议或交流，欢迎联系勾搭
+
+<img src="https://bilingual-pdf.oss-cn-huhehaote.aliyuncs.com/xiuxiu.JPG" width=40% height=40%>
