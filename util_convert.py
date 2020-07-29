@@ -50,7 +50,7 @@ def convert_pdf_to_docx_v1(pdf_fn, word_fn):
         pdf2word.setOutputDocumentFormat(PDF2Word.optOutputDocumentFormat.OPT_OUTPUT_DOCX)
         pdf2word.setConnectHyphens(True)
         pdf2word.setShrinkCharacterSpacingToPreventWrap(True)
-        pdf2word.setFileConversionTimeout(600000)
+        pdf2word.setFileConversionTimeout(6000000)
         pdf2word.ConvertToWord(pdf_fn, word_fn, "", 0, -1)
     except PDF2Word.PDF2WordException as ex:
         log.info(ex)
