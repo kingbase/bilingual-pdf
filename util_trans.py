@@ -36,9 +36,9 @@ def translate_doc(doc_raw, doc_trans, trans_cache):
     process_paragraphs = doc.paragraphs
 
     log.info("Translating from caiyun...")
-    for batch_par in tqdm(batch(process_paragraphs, size=100)):
+    for i, batch_par in tqdm(enumerate(batch(process_paragraphs, size=100))):
         source = []
-        for par in batch_par:
+        for j, par in enumerate(batch_par):
             en_text = para2text(par)
             if len(en_text) == 0:
                 continue

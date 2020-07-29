@@ -21,7 +21,7 @@ def is_purchase_page(page):
 def para2text(p):
     assert isinstance(p, Paragraph)
     rs = p._element.xpath('.//w:t')
-    return u" ".join([r.text for r in rs])
+    return u" ".join([r.text for r in rs if r.text is not None])
 
 # a=[1,3,5], b=[2,4], result=[1,2,3,4,5]
 def cross_iter(list_a, list_b):
