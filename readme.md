@@ -26,6 +26,7 @@ Word --> PDF，依赖于 Office Word 的 COM 接口。
     1. 需要在 https://www.pdfonline.com/downloads/easyconvertersdk/demos_easyconvertersdk-word-2.asp 申请该SDK的试用，填写表单后即可获得下载地址。如果不想填写，也可以点此直接下载：[Windows](https://bilingual-pdf.oss-cn-huhehaote.aliyuncs.com/msi_easyconvertersdk50-word-excel-setup64.msi
 ) / [Linux](https://bilingual-pdf.oss-cn-huhehaote.aliyuncs.com/easyconvertersdk50-word-UNIX64-ACT.zip)（目前本 repo 尚不支持 Linux）。
     2. 安装后，将安装目录添加到 PYTHONPATH ，假定安装位置是 `C:\Program Files\BCL Technologies\easyConverter SDK 5\Rtf`，则在 Windows 上需要设置为：`setx PYTHONPATH "%PYTHONPATH%;C:\Program Files\BCL Technologies\easyConverter SDK 5\Rtf"`
+    3. 使用一段时间后才发现此 SDK 有试用时间限制，但代码中对此 SDK 有一定的路径依赖。如果到期后还想继续试用，可以考虑修改系统时间。
 2. 安装其他依赖 `pip install -r requirements.txt`
 3. 依赖中 `PyPDF2` 存在bug，需要做以下修改
     1. `PyPDF2\utils.py` 按照以下说明修改。
