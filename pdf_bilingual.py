@@ -80,11 +80,11 @@ if mode.lower().startswith("single"):
 elif mode == "KnownDoc":
     toCopyFileName = os.path.join(outputDirName, "%s_1_Raw.pdf" %(inputBaseNameWithoutExt))
     pdfFileName = toCopyFileName
-    convertedDocFileName = sys.argv[3]
+    convertedDocFileName = sys.argv[4]
     translatedDocFileName = os.path.join(outputDirName, "%s_2_Translated.docx" %(inputBaseNameWithoutExt))
-    translate_doc(convertedDocFileName, translatedDocFileName)
+    translate_doc(convertedDocFileName, translatedDocFileName, cache_trans)
     translatedPdfFileName = os.path.join(outputDirName, "%s_3_Translated.pdf" %(inputBaseNameWithoutExt))
     docx2pdf(translatedDocFileName, translatedPdfFileName)
-    finalFileName = os.path.join(outputDirName, "%s_4_FINAL.docx" %(inputBaseNameWithoutExt))
+    finalFileName = os.path.join(outputDirName, "%s_4_FINAL.pdf" %(inputBaseNameWithoutExt))
     merge_pages(inputFileName, translatedPdfFileName, finalFileName)
 log.info("Convert Success: %s" %(finalFileName))

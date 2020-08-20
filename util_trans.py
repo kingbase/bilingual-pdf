@@ -1,5 +1,6 @@
 import json
 import requests
+import os
 
 import docx
 from tqdm import tqdm
@@ -32,6 +33,9 @@ def translate_caiyun(texts):
     return translated
 
 def translate_doc(doc_raw, doc_trans, trans_cache):
+    if os.path.exists(doc_trans):
+	    log.info("File %s exists, translate_doc will be skipped." %(doc_trans))
+	    return
     doc = docx.Document(doc_raw)
     process_paragraphs = doc.paragraphs
 
